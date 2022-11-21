@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>KaBuM! | Suporte</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-image: linear-gradient(gray, white);
+        }
+    </style>
+
+    <h3 class="text-center p-5" style="color: white;">Seja bem vindo ao Suporte KaBuM!</h3>
+
+
+    <!-- Formulário -->
+    <div class="container">
+        <div class="row">
+            <div class="mt-2 col">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Endereço de Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" onkeyup="validaEmail()">
+                        <div class="mb-10 text-red" id="emailErro"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Insira seu nome</label>
+                        <input type="nome" class="form-control" id="nome" onkeyup="validaNome()">
+                        <div class="mb-10 text-red" id="nomeErro"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Assunto</label>
+                        <textarea class="form-control" id="assunto" rows="3" onkeyup="validaAssunto()"></textarea>
+                        <div class="mb-10 text-red" id="assuntoErro"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" onclick="enviar()">Enviar</button>
+                </form>
+            </div>
+
+            <div class="mt-5 d-flex  justify-content-center col">
+                <h3 style="color: white;">Nosso Endereço</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14736.870105026213!2d-47.4084298!3d-22.5709662!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb518b57bca58d805!2sKaBuM!5e0!3m2!1spt-BR!2sbr!4v1669044472255!5m2!1spt-BR!2sbr"
+                    width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="justify-content-center"></iframe>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="text-center text-lg-start bg-light text-muted mt-5">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 text-reset text-secondary">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset text-secondary">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset text-secondary">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset text-secondary">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset text-secondary">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset text-secondary">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>KaBuM!
+                        </h6>
+                        <p>
+                            KaBuM!® é uma marca registrada de KABUM COMÉRCIO ELETRÔNICO S/A | CNPJ:
+                            05.570.714/0001-59 | Todos os direitos reservados. &#169
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Produtos
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset text-secondary"></a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset text-secondary">Computadores</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset text-secondary">Consoles</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset text-secondary">Celulares</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Links Úteis
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset text-secondary">Lançamentos</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset text-secondary">Ofertas do Dia</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset text-secondary">Cartão KaBuM!</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset text-secondary">Suporte</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contato</h6>
+                        <p><i class="fas fa-home me-3"></i>Rua Carlos Gomes, 1321 -
+                            9° Andar - Centro Limeira/SP - CEP: 13480-010</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            faleconosco@kabum.com.br
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i>(19) 2114-4444</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2022 Copyright:
+            <a class="text-reset text-secondary fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <!-- JavaScript (Opcional) -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
