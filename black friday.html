@@ -9,54 +9,126 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>KaBuM! | Suporte</title>
+
+    <title>KaBuM! | Black Friday</title>
 </head>
 
 <body>
 
-    <div class="bg-secondary">
-        <h3 class="text-center p-5" style="color: white;">Seja bem vindo ao Suporte KaBuM!</h3>
+    <div class="bg-light">
+
+<!-- Barra de Navegação Cima -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(53, 41, 224);">
+    <a class="navbar-brand ml-4 mt-2 mb-2" href="index.html">
+        <img src="assets/img/kabum-logo-2.png" alt="Logo da KaBuM" width="150px" height="55px">
+    </a>
+
+    <form class="form-inline my-2 my-lg-0 ml-3">
+        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+        <button class="btn my-2 my-sm-0 text-light" style="background-color: rgb(255, 149, 0);"
+            type="submit">Pesquisar</button>
+    </form>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+        aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse ml-5" id="conteudoNavbarSuportado">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <img src="assets/img/carrinho-de-compras.png" alt="carrinho" width="30px" height="30px">
+                    Compras
+                </a>
+            </li>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <img src="assets/img/heart.png" alt="favoritos" width="30px" height="30px"> Favoritos
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item text-light">
+                    <a class="nav-link" href="support.html">
+                        <img src="assets/img/support.png" alt="suporte" width="30px" height="30px"> Suporte
+                    </a>
+                </li>
+            </ul>
+    </div>
+</nav>
 
 
-        <!-- Formulário -->
-        <div class="container">
-            <div class="row">
-                <div class="mt-2 col">
-                    <form>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Endereço de Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com"
-                                onkeyup="validaEmail()">
-                            <div class="text-danger" id="emailErro"></div>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Insira seu nome</label>
-                            <input type="nome" class="form-control" id="nome" onkeyup="validaNome()">
-                            <div class="text-danger" id="nomeErro"></div>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Assunto</label>
-                            <textarea class="form-control" id="assunto" rows="3" onkeyup="validaAssunto()"></textarea>
-                            <div class="text-danger" id="assuntoErro"></div>
-                        </div>
-                        <button type="submit" class="btn btn-primary" onclick="enviar()">Enviar</button>
-                    </form>
+<!-- Barra de Navegação Baixo -->
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(255, 115, 0);">
+    <a class="navbar-brand ml-3" href="#">LANÇAMENTOS</a>
+
+    <div class="collapse navbar-collapse ml-3" id="conteudoNavbarSuportado">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">CARTÃO KABUM!</a>
+            </li>
+            <li class="nav-item dropdown ml-3">
+                <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    COMPONENTES
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="index.html">Computadores</a>
+                    <a class="dropdown-item" href="index.html">Consoles</a>
+                    <a class="dropdown-item" href="index.html">Celulares</a>
                 </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="black friday.html">BLACK FRIDAY</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
-                <div class="mt-3 justify-content-center col">
-                    <h3 class="text-light text-center">Nosso Endereço</h3>
-                    <div class="row marcador align-items-center">
-                        <div class="col mx-auto text-center">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14736.870105026213!2d-47.4084298!3d-22.5709662!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb518b57bca58d805!2sKaBuM!5e0!3m2!1spt-BR!2sbr!4v1669044472255!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade" class="justify-content-center"></iframe>
+                <!-- Carrossel -->
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" width="800px" height="320px" src="assets/img/banner_img.webp"
+                                alt="Primeiro Slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" width="800px" height="320px" src="assets/img/header2.webp"
+                                alt="Segundo Slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" width="800px" height="320px" src="assets/img/kabuumm.webp"
+                                alt="Segundo Slide">
                         </div>
                     </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a>
                 </div>
+
+                <br>
+        <!-- Vídeo -->
+        <div class="container" style="background-color: rgb(255, 115, 0);">
+            <div class="row marcador d-flex align-items-center">
+              <div class="col mx-auto text-center">
+                <iframe width="100%" height="315" style="max-width: 500px;" src="https://www.youtube.com/embed/hyR3DjDMPL0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="mt-5 text-center"></iframe>
+              </div>
             </div>
-        </div>
+            <br><br>
+          </div>
+        
+
 
         <!-- Footer -->
-        <footer class="text-center text-lg-start bg-light text-muted mt-5">
+        <footer class="text-center text-lg-start bg-light text-muted">
             <!-- Section: Social media -->
             <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
 
@@ -98,7 +170,7 @@
                             </h6>
                             <p>
                                 KaBuM!® é uma marca registrada de KABUM COMÉRCIO ELETRÔNICO S/A | CNPJ:
-                                05.570.714/0001-59 | Todos os direitos reservados. &#169
+                                05.570.714/0001-59 | Todos os direitos reservados. &index.html169
                             </p>
                         </div>
                         <!-- Grid column -->
@@ -131,8 +203,7 @@
                                 <a href="https://www.youtube.com/@kabumtv" class="text-reset text-secondary">YouTube</a>
                             </p>
                             <p>
-                                <a href="https://www.instagram.com/kabum.com.br/"
-                                    class="text-reset text-secondary">Instagram</a>
+                                <a href="https://www.instagram.com/kabum.com.br/" class="text-reset text-secondary">Instagram</a>
                             </p>
                             <p>
                                 <a href="https://twitter.com/kabumcombr" class="text-reset text-secondary">Twitter</a>
@@ -169,8 +240,6 @@
     </div>
 
     <!-- JavaScript (Opcional) -->
-    <script src="assets/js/script.js"></script>
-
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

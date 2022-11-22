@@ -37,8 +37,8 @@ function validaEmail() {
 }
 
 function validaAssunto() {
-    if (assunto.value.length > 100) {
-        assuntoErro.innerHTML = 'Limite de Caracteres Excedidos (Limite de 100 Caracteres)'
+    if (assunto.value.length > 400) {
+        assuntoErro.innerHTML = 'Limite de Caracteres Excedidos (Limite de 400 Caracteres)'
     } else {
         assuntoErro.innerHTML = ''
         assuntoOk = true
